@@ -20,8 +20,6 @@ func ExecGet(urlstr string) ([]byte, error) {
 	if err == nil {
 		defer resp.Body.Close()
 		msg, err = ioutil.ReadAll(resp.Body)
-	} else {
-
 	}
 
 	return msg, err
